@@ -1,5 +1,5 @@
 public class Worker extends Staff{
-    private String role;
+    protected String role;
     public Worker(int id,String role) {
         super(id);
         this.role = role;
@@ -11,5 +11,21 @@ public class Worker extends Staff{
 
     public void setRole(String role) {
         this.role = role;
+    }
+
+    @Override
+    public String toString() {
+        return "Coordinator[Role: " + role + ",\n Id: " +getId();
+    }
+
+    @Override
+    public int hashCode(Object obj){
+        return obj.hashCode();
+    }
+
+    @Override
+    public boolean equals(Object obj){
+        if(this == obj) {return true;}
+        else{return false;}
     }
 }

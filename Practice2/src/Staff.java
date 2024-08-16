@@ -1,16 +1,21 @@
-public class Staff {
-    private int id;
+public abstract class Staff {
+    protected int id;
 
-    public Staff(int id) {
+    protected Staff(int id) {
         this.id = id;
     }
 
-    public int getId() {
+    protected int getId() {
         return id;
     }
 
-    public void setId(int id) {
+    protected void setId(int id) {
         this.id = id;
     }
 
+    public abstract String toString();
+
+    public abstract int hashCode(Object obj);
+
+    public abstract boolean equals(Object obj);
 }

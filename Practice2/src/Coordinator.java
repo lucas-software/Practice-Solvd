@@ -34,4 +34,20 @@ public class Coordinator extends Staff{
     public void setAge(int age) {
         this.age = age;
     }
+
+    @Override
+    public String toString() {
+        return "Coordinator[Name: " + name + ",\n" + "Role: " + role + ",\n" +"Age: " + age + ",\n" + "Id: " +getId();
+    }
+
+    @Override
+    public int hashCode(Object obj){
+        return obj.hashCode();
+    }
+
+    @Override
+    public boolean equals(Object obj){
+        if(this == obj) {return true;}
+        else{return false;}
+    }
 }
