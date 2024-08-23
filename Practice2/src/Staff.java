@@ -18,4 +18,8 @@ public abstract class Staff {
     public abstract int hashCode(Object obj);
 
     public abstract boolean equals(Object obj);
+
+    abstract void work();
+
+    abstract void takeBreak();
 }

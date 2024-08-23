@@ -1,4 +1,4 @@
-public class Coach extends Staff{
+public class Coach extends Staff implements Trainable, Payable, Promotable, Reportable, Insurable{
 
     private String name;
     private int age;
@@ -39,5 +39,40 @@ public class Coach extends Staff{
         if(this == obj) {return true;}
         else{return false;}
 
+    }
+
+    @Override
+    void work() {
+        System.out.println("Coach is working on technical tasks.");
+    }
+
+    @Override
+    void takeBreak() {
+        System.out.println("Coach is taking a break.");
+    }
+
+    @Override
+    public void attendTraining() {
+        System.out.println("Coach is attending technical training.");
+    }
+
+    @Override
+    public void receiveSalary() {
+        System.out.println("Coach is received salary.");
+    }
+
+    @Override
+    public void getPromotion() {
+        System.out.println("Coach is getting promoted.");
+    }
+
+    @Override
+    public void submitReport() {
+        System.out.println("Coach is submitting a report.");
+    }
+
+    @Override
+    public void enrollInsurance() {
+        System.out.println("Coach is enrolling in insurance.");
     }
 }

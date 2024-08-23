@@ -1,0 +1,3 @@
+interface Promotable {
+    void getPromotion();
+}

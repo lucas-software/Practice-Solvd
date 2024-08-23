@@ -50,4 +50,14 @@ public class Coordinator extends Staff{
         if(this == obj) {return true;}
         else{return false;}
     }
+
+    @Override
+    void work() {
+
+    }
+
+    @Override
+    void takeBreak() {
+
+    }
 }
