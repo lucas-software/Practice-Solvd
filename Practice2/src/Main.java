@@ -4,11 +4,20 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
+
         Nba nba = new Nba(1, "Basketball", 32);
         Nfl nfl = new Nfl(2, "Football");
         NbaTeam nbaTeam = new NbaTeam("Brazillian Angels", Conference.NORTH, 1);
         NflTeam nflTeam = new NflTeam("Brazillian Devils", Conference.SOUTH, 2);
         Player Neymar = new Player(11, "Brazil", "Forward");
+        ArrayList<League> leagues = new ArrayList<>();
+        leagues.add(nba);
+        leagues.add(nfl);
+        ArrayList<Team> teams = new ArrayList<>();
+        teams.add(nbaTeam);
+        teams.add(nflTeam);
+        ArrayList<Player> players = new ArrayList<>();
+        players.add(Neymar);
         ArrayList<Staff> staffers = new ArrayList<>();
         Coach headCoach = new Coach(1, "Bill Belichick", 72);
         staffers.add(headCoach);
